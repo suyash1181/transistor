@@ -11,116 +11,19 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="scanlines" aria-hidden="true"></div>
-  <div class="grid" aria-hidden="true"></div>
-
-  <header class="topbar">
-    <a class="brand" href="#top" aria-label="Transistor home">TR<span>XN</span></a>
-    <nav>
-      <a href="#what">01 / WHAT</a>
-      <a href="#how">02 / HOW</a>
-      <a href="#types">03 / TYPES</a>
-      <a href="#uses">04 / USES</a>
-      <a href="#resources">05 / RESOURCES</a>
-    </nav>
-    <div class="status"><i></i> SYSTEM ONLINE</div>
-  </header>
-
+  <div class="scanlines" aria-hidden="true"></div><div class="grid" aria-hidden="true"></div>
+  <header class="topbar"><a class="brand" href="#top">TR<span>XN</span></a><nav><a href="#what">01 / WHAT</a><a href="#how">02 / HOW</a><a href="#types">03 / TYPES</a><a href="#uses">04 / USES</a><a href="#resources">05 / RESOURCES</a></nav><div class="status"><i></i> SYSTEM ONLINE</div></header>
   <main id="top">
-    <section class="hero section-shell">
-      <div class="hero-copy">
-        <p class="eyebrow">ELECTRONICS / SEMICONDUCTOR / 001</p>
-        <h1>THE<br><span>TRANSISTOR</span></h1>
-        <p class="hero-text">The tiny electronic component that made modern computers, phones, radios and almost every digital device possible.</p>
-        <div class="hero-actions">
-          <a class="btn primary" href="#what">INITIALIZE LEARNING <b>→</b></a>
-          <a class="btn" href="#resources">DEEPER DATA</a>
-        </div>
-      </div>
-      <div class="hero-terminal">
-        <div class="terminal-head"><span>TRANSISTOR_CORE.exe</span><span>● ● ●</span></div>
-        <div class="terminal-body">
-          <p><span class="prompt">&gt;</span> loading semiconductor...</p>
-          <p><span class="ok">[OK]</span> three terminals detected</p>
-          <p><span class="ok">[OK]</span> signal control enabled</p>
-          <p><span class="ok">[OK]</span> amplification available</p>
-          <div class="terminal-diagram" aria-label="Simplified transistor circuit diagram">
-            <span class="wire w1"></span><span class="wire w2"></span><span class="wire w3"></span>
-            <span class="node n1">C</span><span class="node n2">B</span><span class="node n3">E</span>
-            <span class="component">Q</span>
-          </div>
-          <p class="cursor">&gt; awaiting input_</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="what" class="content-section section-shell">
-      <div class="section-label">01 / WHAT IS IT?</div>
-      <div class="section-heading"><h2>A SWITCH.<br><em>AN AMPLIFIER.</em></h2><p>One semiconductor device. Two fundamental jobs. Billions of them working together can become a processor.</p></div>
-      <div class="cards three">
-        <article class="card accent-cyan"><span class="card-no">01</span><h3>CONTROL</h3><p>A small electrical signal can control a much larger current. That makes the transistor a controllable electronic switch.</p></article>
-        <article class="card accent-purple"><span class="card-no">02</span><h3>AMPLIFY</h3><p>In the right circuit, a transistor can use a small input signal to control a larger output signal.</p></article>
-        <article class="card accent-pink"><span class="card-no">03</span><h3>COMPUTE</h3><p>Transistors can be combined into logic gates. Huge groups of gates form the digital circuits inside computers.</p></article>
-      </div>
-    </section>
-
-    <section id="how" class="content-section section-shell split">
-      <div>
-        <div class="section-label">02 / HOW IT WORKS</div>
-        <h2>THREE<br><span>TERMINALS.</span></h2>
-        <p class="lead">For a common bipolar junction transistor (BJT), the three terminals are the <strong>Base</strong>, <strong>Collector</strong>, and <strong>Emitter</strong>.</p>
-        <div class="terminal-list">
-          <div><b>B</b><span><strong>BASE</strong><small>Control input</small></span></div>
-          <div><b>C</b><span><strong>COLLECTOR</strong><small>Controlled-current side</small></span></div>
-          <div><b>E</b><span><strong>EMITTER</strong><small>Current output/reference side</small></span></div>
-        </div>
-      </div>
-      <div class="explainer">
-        <div class="explainer-top">SIGNAL FLOW // SIMPLIFIED</div>
-        <div class="flow"><span>INPUT</span><b>→</b><span class="glow">BASE</span><b>→</b><span>CONTROL</span><b>→</b><span>OUTPUT</span></div>
-        <p>Think of the base as the control point. A small change there can control current flowing through the transistor's other terminals.</p>
-        <div class="meter"><span style="width:78%"></span></div>
-        <small>CONTROL SIGNAL / ACTIVE</small>
-      </div>
-    </section>
-
-    <section id="types" class="content-section section-shell">
-      <div class="section-label">03 / TYPES</div>
-      <div class="section-heading"><h2>NPN vs <em>PNP</em></h2><p>Both are BJTs, but their semiconductor structure and current directions differ.</p></div>
-      <div class="compare">
-        <article class="type-card"><div class="type-badge">NPN</div><h3>COMMON LOW-SIDE SWITCH</h3><p>Often used when a control signal turns a load on by allowing current to flow toward ground.</p><div class="mini-code">INPUT HIGH → TRANSISTOR ON</div></article>
-        <article class="type-card"><div class="type-badge pnp">PNP</div><h3>COMMON HIGH-SIDE SWITCH</h3><p>Often used when a control signal controls a load connected toward the positive supply.</p><div class="mini-code">INPUT LOW → TRANSISTOR ON</div></article>
-      </div>
-      <div class="note">TIP: Real transistor circuits depend on biasing, voltage, current, load, and the specific device. This page keeps the first concepts intentionally simple.</div>
-    </section>
-
-    <section id="uses" class="content-section section-shell">
-      <div class="section-label">04 / APPLICATIONS</div>
-      <div class="section-heading"><h2>WHERE THE<br><em>MAGIC HAPPENS</em></h2><p>Transistors are not just a school-lab component. They are fundamental building blocks of modern electronics.</p></div>
-      <div class="use-grid">
-        <div class="use"><b>01</b><span>LOGIC</span><small>CPU and digital circuits</small></div>
-        <div class="use"><b>02</b><span>AMPLIFIERS</span><small>Audio and signal processing</small></div>
-        <div class="use"><b>03</b><span>SWITCHING</span><small>Controllers and power circuits</small></div>
-        <div class="use"><b>04</b><span>MEMORY</span><small>Storage cells and digital systems</small></div>
-        <div class="use"><b>05</b><span>SENSORS</span><small>Signal conditioning</small></div>
-        <div class="use"><b>06</b><span>COMMUNICATION</span><small>Radio-frequency electronics</small></div>
-      </div>
-    </section>
-
-    <section id="resources" class="content-section section-shell resources">
-      <div class="section-label">05 / DEEPER DATA</div>
-      <div class="section-heading"><h2>GO<br><em>DEEPER.</em></h2><p>Want the seriously technical version? These resources go beyond this beginner-friendly page into circuits, semiconductor physics, datasheets and transistor design.</p></div>
-      <div class="resource-list">
-        <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-4/bipolar-junction-transistors-bjt/" target="_blank" rel="noopener noreferrer"><span>ALL ABOUT CIRCUITS</span><small>BJT theory and circuit fundamentals</small><b>↗</b></a>
-        <a href="https://www.electronics-tutorials.ws/transistor/tran_1.html" target="_blank" rel="noopener noreferrer"><span>ELECTRONICS-TUTORIALS</span><small>Transistor basics, biasing and configurations</small><b>↗</b></a>
-        <a href="https://www.nexperia.com/products/bipolar-transistors.html" target="_blank" rel="noopener noreferrer"><span>NEXPERIA</span><small>Real transistor families and technical data</small><b>↗</b></a>
-        <a href="https://www.ti.com/lit/pdf/sboa122" target="_blank" rel="noopener noreferrer"><span>TEXAS INSTRUMENTS</span><small>Transistor and amplifier application material</small><b>↗</b></a>
-      </div>
-      <p class="advanced-warning">ADVANCED RESOURCE ACCESS // Some of these pages use equations, circuit theory and semiconductor terminology.</p>
-    </section>
-  </main>
-
-  <footer class="footer section-shell"><span>TRANSISTOR // STUDENT ELECTRONICS PROJECT</span><span>BUILD • LEARN • EXPERIMENT</span></footer>
-  <script src="script.js"></script>
-</body>
-</html>
+    <section class="hero section-shell"><div class="hero-copy"><p class="eyebrow">ELECTRONICS / SEMICONDUCTOR / 001</p><h1>THE<br><span>TRANSISTOR</span></h1><p class="hero-text">The tiny electronic component that made modern computers, phones, radios and almost every digital device possible.</p><div class="hero-actions"><a class="btn primary" href="#what">INITIALIZE LEARNING <b>→</b></a><a class="btn" href="#resources">DEEPER DATA</a></div></div><div class="hero-terminal"><div class="terminal-head"><span>TRANSISTOR_CORE.exe</span><span>● ● ●</span></div><div class="terminal-body"><p><span class="prompt">&gt;</span> loading semiconductor...</p><p><span class="ok">[OK]</span> three terminals detected</p><p><span class="ok">[OK]</span> signal control enabled</p><p><span class="ok">[OK]</span> amplification available</p><div class="terminal-diagram"><span class="wire w1"></span><span class="wire w2"></span><span class="wire w3"></span><span class="node n1">C</span><span class="node n2">B</span><span class="node n3">E</span><span class="component">Q</span></div><p class="cursor">&gt; awaiting input_</p></div></div></section>
+    <section id="what" class="content-section section-shell"><div class="section-label">01 / WHAT IS IT?</div><div class="section-heading"><h2>A SWITCH.<br><em>AN AMPLIFIER.</em></h2><p>One semiconductor device. Two fundamental jobs. Billions of them working together can become a processor.</p></div><div class="cards three"><article class="card accent-cyan"><span class="card-no">01</span><h3>CONTROL</h3><p>A small electrical signal can control a much larger current. That makes the transistor a controllable electronic switch.</p></article><article class="card accent-purple"><span class="card-no">02</span><h3>AMPLIFY</h3><p>In the right circuit, a transistor can use a small input signal to control a larger output signal.</p></article><article class="card accent-pink"><span class="card-no">03</span><h3>COMPUTE</h3><p>Transistors can be combined into logic gates. Huge groups of gates form the digital circuits inside computers.</p></article></div></section>
+    <section id="how" class="content-section section-shell split"><div><div class="section-label">02 / HOW IT WORKS</div><h2>THREE<br><span>TERMINALS.</span></h2><p class="lead">For a common bipolar junction transistor (BJT), the three terminals are the <strong>Base</strong>, <strong>Collector</strong>, and <strong>Emitter</strong>.</p><div class="terminal-list"><div><b>B</b><span><strong>BASE</strong><small>Control input</small></span></div><div><b>C</b><span><strong>COLLECTOR</strong><small>Controlled-current side</small></span></div><div><b>E</b><span><strong>EMITTER</strong><small>Current output/reference side</small></span></div></div></div><div class="explainer"><div class="explainer-top">SIGNAL FLOW // SIMPLIFIED</div><div class="flow"><span>INPUT</span><b>→</b><span class="glow">BASE</span><b>→</b><span>CONTROL</span><b>→</b><span>OUTPUT</span></div><p>Think of the base as the control point. A small change there can control current flowing through the transistor's other terminals.</p><div class="meter"><span style="width:78%"></span></div><small>CONTROL SIGNAL / ACTIVE</small></div></section>
+    <section id="types" class="content-section section-shell"><div class="section-label">03 / TYPES</div><div class="section-heading"><h2>NPN vs <em>PNP</em></h2><p>Both are BJTs, but their semiconductor structure and current directions differ.</p></div><div class="compare"><article class="type-card"><div class="type-badge">NPN</div><h3>COMMON LOW-SIDE SWITCH</h3><p>Often used when a control signal turns a load on by allowing current to flow toward ground.</p><div class="mini-code">INPUT HIGH → TRANSISTOR ON</div></article><article class="type-card"><div class="type-badge pnp">PNP</div><h3>COMMON HIGH-SIDE SWITCH</h3><p>Often used when a control signal controls a load connected toward the positive supply.</p><div class="mini-code">INPUT LOW → TRANSISTOR ON</div></article></div><div class="note">TIP: Real transistor circuits depend on biasing, voltage, current, load, and the specific device. This page keeps the first concepts intentionally simple.</div></section>
+    <section id="uses" class="content-section section-shell"><div class="section-label">04 / APPLICATIONS</div><div class="section-heading"><h2>WHERE THE<br><em>MAGIC HAPPENS</em></h2><p>Transistors are not just a school-lab component. They are fundamental building blocks of modern electronics.</p></div><div class="use-grid"><div class="use"><b>01</b><span>LOGIC</span><small>CPU and digital circuits</small></div><div class="use"><b>02</b><span>AMPLIFIERS</span><small>Audio and signal processing</small></div><div class="use"><b>03</b><span>SWITCHING</span><small>Controllers and power circuits</small></div><div class="use"><b>04</b><span>MEMORY</span><small>Storage cells and digital systems</small></div><div class="use"><b>05</b><span>SENSORS</span><small>Signal conditioning</small></div><div class="use"><b>06</b><span>COMMUNICATION</span><small>Radio-frequency electronics</small></div></div></section>
+    <section id="resources" class="content-section section-shell resources"><div class="section-label">05 / DEEPER DATA</div><div class="section-heading"><h2>GO<br><em>DEEPER.</em></h2><p>Want the seriously technical version? Jump straight to trusted electronics, semiconductor and research resources.</p></div><div class="resource-cards">
+      <a class="resource-card ti" href="https://www.ti.com/product-category/passive-discrete/transistors/overview.html" target="_blank" rel="noopener noreferrer"><div class="resource-logo"><strong>TI</strong></div><div><h3>TEXAS INSTRUMENTS</h3><p>Transistors, application material and semiconductor design resources.</p></div><b>↗</b></a>
+      <a class="resource-card ieee" href="https://ieeexplore.ieee.org/" target="_blank" rel="noopener noreferrer"><div class="resource-logo"><strong>IEEE</strong><span>Xplore</span></div><div><h3>IEEE XPLORE</h3><p>Technical papers and research in electronics, electrical engineering and semiconductors.</p></div><b>↗</b></a>
+      <a class="resource-card hub" href="https://www.electronicshub.org/introduction-to-transistors/" target="_blank" rel="noopener noreferrer"><div class="resource-logo"><strong>EH</strong></div><div><h3>ELECTRONICS HUB</h3><p>Transistor history, symbols, operation modes and practical explanations.</p></div><b>↗</b></a>
+      <a class="resource-card aac" href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-4/bipolar-junction-transistors-bjt/" target="_blank" rel="noopener noreferrer"><div class="resource-logo"><strong>AAC</strong></div><div><h3>ALL ABOUT CIRCUITS</h3><p>Detailed BJT theory, circuits, switching and semiconductor fundamentals.</p></div><b>↗</b></a>
+    </div><p class="advanced-warning">ADVANCED RESOURCE ACCESS // Some pages use equations, circuit theory and semiconductor terminology.</p></section>
+  </main><footer class="footer section-shell"><span>TRANSISTOR // STUDENT ELECTRONICS PROJECT</span><span>BUILD • LEARN • EXPERIMENT</span></footer><script src="script.js"></script>
+</body></html>
